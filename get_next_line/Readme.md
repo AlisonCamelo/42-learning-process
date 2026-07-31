@@ -55,5 +55,6 @@ Reading a file line-by-line with a fixed `BUFFER_SIZE` requires a 3-step lifecyc
 ### 1. Understanding File Descriptors & System Calls
 ### 2. GNL Step-by-Step Lifecycle
 #### Phase 3: Cleanup & EOF (End of File)
-![GNL Step 3](./assets/04_gnl_flow_step3.png)
-![alt text](<Screenshot from 2026-07-31 13-21-54.png>)
+
+![1.](<Screenshot from 2026-07-31 13-21-24.png>)
+![2](<Screenshot from 2026-07-31 13-21-54.png>)
