@@ -18,24 +18,6 @@ Every project folder in this repository contains:
 
 ---
 
-## 🗺️ Roadmap & Project Index
-
-### 🟢 Circle 00
-* 📦 **[libft_trials](./00_libft_trials/)**  
-  *Focus:* Recreating standard C library functions, memory manipulation (`memset`, `bzero`, `calloc`), string handling, and single-linked lists.
-
-### 🟡 Circle 01
-* 📜 **[get_next_line_trials](./01_get_next_line_trials/)**  
-  *Focus:* Static variables, buffer manipulation with `read()`, dynamic heap allocation, and line-by-line file reading without memory leaks.
-* 🖨️ **[ft_printf_trials](./02_ft_printf_trials/)** *(In Progress / Upcoming)*  
-  *Focus:* Variadic functions (`va_list`), format specifiers, hex/pointer conversions, and low-level I/O.
-
-### 🟠 Circle 02 (Upcoming)
-* 🔀 **[push_swap_trials](./03_push_swap_trials/)** — Sorting algorithms & stack optimization.
-* 🌐 **[so_long_trials](./04_so_long_trials/)** / **[pipex_trials](./05_pipex_trials/)** — 2D graphics or process management/UNIX pipes.
-
----
-
 ## 🛠️ Visual Diagrams (Excalidraw)
 
 All visual schematics embedded in the project subdirectories are created using **Excalidraw**. 
