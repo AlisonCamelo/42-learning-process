@@ -1,0 +1,69 @@
+# 📜 Get Next Line — Pprogressive micro-exercises to master **static variables**, **heap memory management**, and **string slicing**.
+
+---rogressive Learning & Implementation Log
+
+This directory documents my step-by-step journey to understand, design, and implement `get_next_line` for the 42 School curriculum.
+
+Instead of jumping straight to the final function, I built 
+
+## 🧠 Core Mechanics & Mental Model
+
+Reading a file descriptor line-by-line with an arbitrary `BUFFER_SIZE` requires managing state across function calls.
+
+# 📜 Get Next Line — Learning & Trials
+
+This folder contains my step-by-step development process, memory exercises, and architectural breakdowns for **`get_next_line`**.
+
+---
+
+## 🧠 Conceptual Mental Model
+
+Reading a file line-by-line with a fixed `BUFFER_SIZE` requires a 3-step lifecycle:
+
+1. **Read & Accumulate:** Read `BUFFER_SIZE` bytes into a temporary buffer and append it to a `static` variable (`leftovers`) until a newline (`\n`) or EOF (End of File) is reached.
+2. **Extract Line:** Cut the substring from the start of `leftovers` up to and including the first `\n`.
+3. **Clean Leftovers:** Retain only the remaining characters after the `\n` in the `static` variable for the next function call, freeing the old allocation.
+
+---
+
+## 🎨 Excalidraw Memory Diagram
+
+![GNL Memory Architecture](./assets/gnl_memory_map.png)
+
+> *The diagram above illustrates how `leftovers` persists in memory across multiple function calls while `buffer` is created and freed per iteration.*
+
+---
+
+## 📁 Exercises & Trial Breakdown
+
+| File | Description | Key Concept Learned |
+| :--- | :--- | :--- |
+| `01_find_newline.c` | Locate the index of `\n` in a string | Index math vs char pointers |
+| `02_append_word.c` | String joining with static memory | `malloc`, `free`, avoiding leaks |
+| `get_next_line_draft.c` | Full implementation with step comments | Uniting the full 3-step loop |
+
+---
+
+## ⚡ Edge Cases & Common Pitfalls Documented
+* **Segmentation Fault on initial call:** Occurs if `ft_strchr` is executed on a `NULL` static pointer before initial assignment.
+* **Buffer Overflow:** Forgetting to allocate `BUFFER_SIZE + 1` to accommodate the null terminator `\0`.
+* **Memory Leak on Read Error:** Failing to `free(buffer)` and `free(leftovers)` when `read()` returns `-1`.
+
+
+## 🎨 Visual Architecture & Memory Flow (Excalidraw Schematics)
+
+### 1. Understanding File Descriptors & System Calls
+![What is FD](./assets/01_what_is_fd.png)
+
+---
+
+### 2. GNL Step-by-Step Lifecycle
+
+#### Phase 1: First Read & Extraction
+![GNL Step 1](./assets/02_gnl_flow_step1.png)
+
+#### Phase 2: Multi-buffer Loop Accumulation
+![GNL Step 2](./assets/03_gnl_flow_step2.png)
+
+#### Phase 3: Cleanup & EOF (End of File)
+![GNL Step 3](./assets/04_gnl_flow_step3.png)
