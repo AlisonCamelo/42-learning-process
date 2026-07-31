@@ -1,6 +1,6 @@
 # 📜 Get Next Line — Pprogressive micro-exercises to master **static variables**, **heap memory management**, and **string slicing**.
 
----rogressive Learning & Implementation Log
+---Progressive Learning & Implementation Log
 
 This directory documents my step-by-step journey to understand, design, and implement `get_next_line` for the 42 School curriculum.
 
@@ -28,7 +28,7 @@ Reading a file line-by-line with a fixed `BUFFER_SIZE` requires a 3-step lifecyc
 
 ## 🎨 Excalidraw Memory Diagram
 
-![GNL Memory Architecture](./assets/gnl_memory_map.png)
+![GNL Memory Architecture]
 
 > *The diagram above illustrates how `leftovers` persists in memory across multiple function calls while `buffer` is created and freed per iteration.*
 
