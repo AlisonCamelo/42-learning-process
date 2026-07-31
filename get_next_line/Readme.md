@@ -1,4 +1,4 @@
-# 📜 Get Next Line — Pprogressive micro-exercises to master **static variables**, **heap memory management**, and **string slicing**.
+# 📜 Get Next Line — Progressive micro-exercises to master **static variables**, **heap memory management**, and **string slicing**.
 
 ---Progressive Learning & Implementation Log
 
@@ -53,17 +53,7 @@ Reading a file line-by-line with a fixed `BUFFER_SIZE` requires a 3-step lifecyc
 ## 🎨 Visual Architecture & Memory Flow (Excalidraw Schematics)
 
 ### 1. Understanding File Descriptors & System Calls
-![What is FD](./assets/01_what_is_fd.png)
-
----
-
 ### 2. GNL Step-by-Step Lifecycle
-
-#### Phase 1: First Read & Extraction
-![GNL Step 1](./assets/02_gnl_flow_step1.png)
-
-#### Phase 2: Multi-buffer Loop Accumulation
-![GNL Step 2](./assets/03_gnl_flow_step2.png)
-
 #### Phase 3: Cleanup & EOF (End of File)
 ![GNL Step 3](./assets/04_gnl_flow_step3.png)
+![alt text](<Screenshot from 2026-07-31 13-21-54.png>)
