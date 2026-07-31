@@ -58,3 +58,6 @@ Reading a file line-by-line with a fixed `BUFFER_SIZE` requires a 3-step lifecyc
 
 ![1.](<Screenshot from 2026-07-31 13-21-24.png>)
 ![2](<Screenshot from 2026-07-31 13-21-54.png>)
+![3](<Screenshot from 2026-07-31 13-22-39.png>)
+![4](<Screenshot from 2026-07-31 13-22-52.png>)
+![5](<Screenshot from 2026-07-31 13-23-07.png>)
