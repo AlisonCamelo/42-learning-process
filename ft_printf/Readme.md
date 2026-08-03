@@ -76,5 +76,5 @@ Visual architectures for the variadic argument stack and specifier routing are l
 * Excalidraw Source: `assets/ft_printf_stack.excalidraw`
 
 ```
-
+![1.](image.png)
 ```
