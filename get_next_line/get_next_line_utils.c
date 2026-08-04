@@ -6,7 +6,7 @@
 /*   By: acamelo <acamelo@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/16 18:55:43 by acamelo           #+#    #+#             */
-/*   Updated: 2026/07/31 13:29:14 by acamelo          ###   ########.fr       */
+/*   Updated: 2026/08/04 13:55:32 by acamelo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t	ft_strlen(const char *s)
 	int	iterate;
 
 	iterate = 0;
+	if(!s)
+		return (0);
 	while (*s != '\0')
 	{
 		iterate++;
@@ -64,13 +66,15 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
-	if (!s2)
+	if (!s1 && !s2)
 		return (NULL);
 	if (!s1)
 		return (ft_strdup(s2));
+	if (!s2)
+		return (ft_strdup(s1));
 	returndata = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!returndata)
-		return (NULL);
+		return (free((void *)s1), NULL);
 	while (s1[i] != '\0')
 	{
 		returndata[i] = s1[i];
