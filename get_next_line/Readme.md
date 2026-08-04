@@ -1,6 +1,6 @@
 # 📜 Get Next Line — Progressive micro-exercises to master **static variables**, **heap memory management**, and **string slicing**.
 
----Progressive Learning & Implementation Log
+Progressive Learning & Implementation Log
 
 This directory documents my step-by-step journey to understand, design, and implement `get_next_line` for the 42 School curriculum.
 
