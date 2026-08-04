@@ -1,5 +1,8 @@
 Welcome to the file!
+Hope this document 
+help you to understand 
+Get_next_line
 Me llamo AlisoN1.
 Me llamo AlisoN2.
 Me llamo AlisoN3.
-hasta luego!!!
+Good bye!!!
