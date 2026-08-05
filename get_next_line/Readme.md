@@ -61,6 +61,6 @@ Reading a file line-by-line with a fixed `BUFFER_SIZE` requires a 3-step lifecyc
 ![3](<Screenshot from 2026-07-31 13-22-39.png>)
 ![4](<Screenshot from 2026-07-31 13-22-52.png>)
 ![5](<Screenshot from 2026-07-31 13-23-07.png>)
-![6](<Screenshot from 2026-07-31 13-23-26.png>)
+![6](</home/acamelo/Pictures/Screenshots/Screenshot from 2026-07-31 13-23-26.png>)
 ![7](<Screenshot from 2026-07-31 13-23-45.png>)
 ![8](<Screenshot from 2026-07-31 13-24-04.png>)
